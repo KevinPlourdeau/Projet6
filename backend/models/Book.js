@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Définition du schéma de données pour le modèle 'Book'
 const bookSchema = mongoose.Schema({
     userId: { type: String, required: true },
     title: { type: String, required: true },
