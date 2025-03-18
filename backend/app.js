@@ -11,7 +11,7 @@ const app = express();
 require('dotenv').config();
 
 //Connexion à MongoDB avec Mongoose
-mongoose.connect(process.env.MONGODB_URI,
+mongoose.connect(process.env,
   { useNewUrlParser: true,  //Utilisation de l'URL de connexion MongoDB
     useUnifiedTopology: true })  //Activation du gestionnaire unifié des connexions
   .then(() => console.log('Connexion à MongoDB réussie !'))
